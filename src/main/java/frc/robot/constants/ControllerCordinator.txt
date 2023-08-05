@@ -1,0 +1,22 @@
+Y - Intake Down
+B - Eject
+A - 
+X - Shoot
+
+L Joystick Y 
+L Joystick X - Steering
+R Joystick Y 
+R Joystick X
+
+D Pad Up - Climber Up
+D Pad Down - Climber Down
+D Pad Left
+D Pad Right
+
+L Trigger - Reverse Throttle
+L Bumper
+R Trigger - Forward Throttle
+R Bumper
+
+Menu
+Screen Share
