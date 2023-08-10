@@ -100,9 +100,12 @@ public class RobotContainer {
     // driver.getDPadUp().whenHeld(new climberUp(climber));
     // driver.getDPadDown().whenHeld(new climberDown(climber));
     
-    driver.getTopButton().onTrue(new IntakeLower(intake));
-    driver.getLeftButton().onTrue(new shooterShoot(shooter, intake));
-    driver.getRightButton().onTrue(new ShooterEject(shooter, intake));
+    // driver.getTopButton().onTrue(new IntakeLower(intake));
+    // driver.getLeftButton().onTrue(new shooterShoot(shooter, intake));
+    // driver.getRightButton().onTrue(new ShooterEject(shooter, intake));
+    driver.getDPadUp().onTrue(new IntakeLower(intake));
+    driver.getDPadLeft().onTrue(new shooterShoot(shooter, intake));
+    driver.getDPadRight().onTrue(new ShooterEject(shooter, intake));
   }
 
 
