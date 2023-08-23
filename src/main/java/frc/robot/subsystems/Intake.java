@@ -92,4 +92,8 @@ final static WPI_TalonSRX upIntake = new WPI_TalonSRX(Ports.Intake.UPPER_INTAKE)
   public static void upIntake(Number Percent){
     upIntake.set(ControlMode.PercentOutput, (Double) Percent);
   }
+  public static void stop(){
+    upIntake.set(0.0);
+    spinRollers.set(0);
+  }
 }

@@ -32,7 +32,7 @@ public class IntakeLower extends CommandBase {
   @Override
   public void end(boolean interrupted) {
     Intake.setIntakeRPM(0.0);
-    intake.upIntake(0.0);
+    Intake.upIntake(0.0);
   }
 
   // Returns true when the command should end.

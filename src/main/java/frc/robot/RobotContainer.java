@@ -95,17 +95,15 @@ public class RobotContainer {
 
 
   private void configureButtonBindings() {
-    
-
     // driver.getDPadUp().whenHeld(new climberUp(climber));
     // driver.getDPadDown().whenHeld(new climberDown(climber));
     
     // driver.getTopButton().onTrue(new IntakeLower(intake));
     // driver.getLeftButton().onTrue(new shooterShoot(shooter, intake));
     // driver.getRightButton().onTrue(new ShooterEject(shooter, intake));
-    driver.getDPadUp().onTrue(new IntakeLower(intake));
-    driver.getDPadLeft().onTrue(new shooterShoot(shooter, intake));
-    driver.getDPadRight().onTrue(new ShooterEject(shooter, intake));
+    driver.getDPadUp().whileTrue(new IntakeLower(intake));
+    driver.getDPadLeft().whileTrue(new shooterShoot(shooter, intake));
+    driver.getDPadRight().whileTrue(new ShooterEject(shooter, intake));
   }
 
 
